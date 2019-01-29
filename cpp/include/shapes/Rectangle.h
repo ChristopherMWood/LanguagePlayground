@@ -1,8 +1,15 @@
 #include "Shape.h"
 
-class Rectangle : Shape
+template <typename T>
+class Rectangle : public Shape<T>
 {
     public:
-        Rectangle(int width, int height) : Shape(width, height) {};
-        int Area();
+        Rectangle(T width, T height) : Shape<T>(width, height) {};
+        T Area();
 };
+
+template <typename T>
+T Rectangle<T>::Area()
+{
+    return this->height * this->width;
+}

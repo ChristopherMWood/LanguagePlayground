@@ -1,8 +1,15 @@
 #include "Shape.h"
 
-class Triangle : Shape
+template <typename T>
+class Triangle : public Shape<T>
 {
     public:
-        Triangle(int width, int height) : Shape(width, height) {};
-        int Area();
+        Triangle(T width, T height) : Shape<T>(width, height) {};
+        T Area();
 };
+
+template <typename T>
+T Triangle<T>::Area()
+{
+    return (this->width * this->height) / 2;
+}

@@ -15,8 +15,8 @@ int main()
 //Compile: g++ program.cpp ./shapes/*.cpp
 void ShapeTest()
 {
-    Rectangle square = Rectangle(2, 2);
-    Triangle triangle = Triangle(10, 5);
+    Rectangle<float> square = Rectangle<float>(2.2, 22.2);
+    Triangle<float> triangle = Triangle<float>(10.8, 5.9);
     cout << "Square Area: " << square.Area() << endl;
     cout << "Triangle Area: " << triangle.Area() << endl;
 }
