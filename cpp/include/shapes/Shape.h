@@ -7,9 +7,9 @@ class Shape
     public:
         Shape(T xWidth, T yHeight) : width(xWidth), height(yHeight) {};
         T Area() { return width; };
-        protected:
-            T width;
-            T height;
+    protected:
+        T width;
+        T height;
 };
 
 #endif
