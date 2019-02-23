@@ -3,7 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PracticeEnvironment;
 
-namespace PracticeEnvironmentTests.cs
+namespace CodingProblemsTests
 {
     [TestClass]
     public class NumberProblemTests

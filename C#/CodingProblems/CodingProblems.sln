@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEnvironment", "PracticeEnvironment\PracticeEnvironment.csproj", "{91513D57-A4C7-4E8B-A399-274784E03E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingProblems", "CodingProblems\CodingProblems.csproj", "{91513D57-A4C7-4E8B-A399-274784E03E7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEnvironmentTests", "PracticeEnvironmentTests.cs\PracticeEnvironmentTests.csproj", "{D8F34048-5F49-48C9-A9BE-C4058B0C0EAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingProblemsTests", "CodingProblemsTests\CodingProblemsTests.csproj", "{D8F34048-5F49-48C9-A9BE-C4058B0C0EAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

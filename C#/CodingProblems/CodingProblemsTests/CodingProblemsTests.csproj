@@ -7,13 +7,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D8F34048-5F49-48C9-A9BE-C4058B0C0EAB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>PracticeEnvironmentTests.cs</RootNamespace>
-    <AssemblyName>PracticeEnvironmentTests.cs</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>CodingProblemsTests</RootNamespace>
+    <AssemblyName>CodingProblemsTests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,9 +64,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PracticeEnvironment\PracticeEnvironment.csproj">
+    <ProjectReference Include="..\CodingProblems\CodingProblems.csproj">
       <Project>{91513D57-A4C7-4E8B-A399-274784E03E7D}</Project>
-      <Name>PracticeEnvironment</Name>
+      <Name>CodingProblems</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
