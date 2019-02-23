@@ -7,10 +7,18 @@ namespace CodingProblemsTests
     [TestClass]
     public class StringProblemsTests
     {
+        private StringProblems stringProblems;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            stringProblems = new StringProblems();
+        }
+
         [TestMethod]
         public void GetPermutationsReturnsCorrectListOfPermutations()
         {
-            var actualPermutations = StringProblems.GetPermutations("aab");
+            var actualPermutations = stringProblems.GetPermutations("aab");
 
             Assert.AreEqual(3, actualPermutations.Count());
             Assert.IsTrue(actualPermutations.Contains("aab"));
@@ -21,7 +29,7 @@ namespace CodingProblemsTests
         [TestMethod]
         public void GetPermutationsReturnsCorrectListOfPermutationsWithAllSeparateCharacters()
         {
-            var actualPermutations = StringProblems.GetPermutations("abc");
+            var actualPermutations = stringProblems.GetPermutations("abc");
 
             Assert.AreEqual(7, actualPermutations.Count());
         }
@@ -29,25 +37,25 @@ namespace CodingProblemsTests
         [TestMethod]
         public void IsPalindromeReturnsTrueForEvenCharacterPalindrome()
         {
-            Assert.IsTrue(StringProblems.IsPalindrome("redder"));
+            Assert.IsTrue(stringProblems.IsPalindrome("redder"));
         }
 
         [TestMethod]
         public void IsPalindromeReturnsTrueForOddCharacterPalindrome()
         {
-            Assert.IsTrue(StringProblems.IsPalindrome("racecar"));
+            Assert.IsTrue(stringProblems.IsPalindrome("racecar"));
         }
 
         [TestMethod]
         public void IsPalindromeReturnsFalseForInvalidPalindrome()
         {
-            Assert.IsFalse(StringProblems.IsPalindrome("Notapalindrome"));
+            Assert.IsFalse(stringProblems.IsPalindrome("Notapalindrome"));
         }
 
         [TestMethod]
         public void IsPalindromeIgnoresCharacterCase()
         {
-            Assert.IsTrue(StringProblems.IsPalindrome("Racecar"));
+            Assert.IsTrue(stringProblems.IsPalindrome("Racecar"));
         }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace PracticeEnvironment
 {
-    public static class NumberProblems
+    public class NumberProblems
     {
-        public static List<int> FindMissingConsecutiveNumbers(List<int> numbers)
+        public List<int> FindMissingConsecutiveNumbers(List<int> numbers)
         {
             var missingNumbers = new List<int>();
 

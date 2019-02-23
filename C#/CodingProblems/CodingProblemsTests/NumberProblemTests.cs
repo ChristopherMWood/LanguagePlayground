@@ -8,10 +8,18 @@ namespace CodingProblemsTests
     [TestClass]
     public class NumberProblemTests
     {
+        private NumberProblems numberProblems;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            numberProblems = new NumberProblems();
+        }
+
         [TestMethod]
         public void FindMissingConsecutiveNumbersReturnsEmptyListWhenPassedEmptyList()
         {
-            var missingNumbers = NumberProblems.FindMissingConsecutiveNumbers(new List<int>());
+            var missingNumbers = numberProblems.FindMissingConsecutiveNumbers(new List<int>());
 
             Assert.AreEqual(0, missingNumbers.Count);
         }
@@ -21,7 +29,7 @@ namespace CodingProblemsTests
         {
             var numbers = new List<int> { 1, 2, 3, 4, 6, 7, 8 };
 
-            var missingNumbers = NumberProblems.FindMissingConsecutiveNumbers(numbers);
+            var missingNumbers = numberProblems.FindMissingConsecutiveNumbers(numbers);
 
             Assert.AreEqual(1, missingNumbers.Count);
             Assert.AreEqual(5, missingNumbers.First());
@@ -32,7 +40,7 @@ namespace CodingProblemsTests
         {
             var numbers = new List<int> { 1, 3, 4, 6, 7, 8 };
 
-            var missingNumbers = NumberProblems.FindMissingConsecutiveNumbers(numbers);
+            var missingNumbers = numberProblems.FindMissingConsecutiveNumbers(numbers);
 
             Assert.AreEqual(2, missingNumbers.Count);
             Assert.AreEqual(2, missingNumbers[0]);
@@ -44,7 +52,7 @@ namespace CodingProblemsTests
         {
             var numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
 
-            var missingNumbers = NumberProblems.FindMissingConsecutiveNumbers(numbers);
+            var missingNumbers = numberProblems.FindMissingConsecutiveNumbers(numbers);
 
             Assert.AreEqual(0, missingNumbers.Count);
         }
