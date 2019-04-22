@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var UsernameLabel: UILabel!
+    @IBOutlet weak var LabelToUpdate: UILabel!
+    @IBOutlet weak var UsernameTextInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UsernameLabel.text = "Enter your Username:"
     }
 
-
+    
+    @IBAction func UsernameFieldChanged(_ sender: Any) {
+        LabelToUpdate.text = UsernameTextInput.text
+    }
+    
 }
 
