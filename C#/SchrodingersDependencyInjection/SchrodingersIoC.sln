@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchrodingersIoC", "SchrodingersIoC\SchrodingersIoC.csproj", "{532C8B4B-303E-4DFA-837F-841EE0297E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{7875ECAB-3E21-4C87-8195-86DBEBB34303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{532C8B4B-303E-4DFA-837F-841EE0297E5E}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{532C8B4B-303E-4DFA-837F-841EE0297E5E}.Debug|anycpu.Build.0 = Debug|anycpu
+		{532C8B4B-303E-4DFA-837F-841EE0297E5E}.Release|anycpu.ActiveCfg = Release|anycpu
+		{532C8B4B-303E-4DFA-837F-841EE0297E5E}.Release|anycpu.Build.0 = Release|anycpu
+		{7875ECAB-3E21-4C87-8195-86DBEBB34303}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{7875ECAB-3E21-4C87-8195-86DBEBB34303}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{7875ECAB-3E21-4C87-8195-86DBEBB34303}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{7875ECAB-3E21-4C87-8195-86DBEBB34303}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B00B1C80-4FD6-4F70-B681-156DB6877834}
+	EndGlobalSection
+EndGlobal
